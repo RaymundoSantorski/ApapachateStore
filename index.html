@@ -6,6 +6,10 @@
 <title>ApapachateStore</title>
 	<script>
 		console.log("Hola, este es un script");
+		function info(precio)
+		{
+			alert("El precio es $"+precio);
+		}
 	</script>
 	<style>
 		body{
@@ -92,12 +96,14 @@
 
 	<container>
 		<div>
-			<img src="spongebob.jpg" class="img"/>
-			<img src="billie.jpg" class="img"/>
-			<img src="babyYoda.jpg" class="img"/>
+			<img src="spongebob.jpg" class="img" onclick="info(50)" />
+			<img src="billie.jpg" class="img" onclick="info(60)" />
+			<img src="babyYoda.jpg" class="img" onclick="info(70)" />
 		</div>
 		<div>
-			<img src="loveFinds.jpg" class="img"/>
+			<img src="loveFinds.jpg" class="img" onclick="info(80)" />
+			<img src="gorros.jpg" class="img" onclick="info(90)" />
+			<img src="bodychicas.jpg" class="img" onclick="info(100)" />
 		</div>
 	</container>
 	
