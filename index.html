@@ -4,6 +4,8 @@
 <head>
 <charset="UTF-8"/>
 <title>ApapachateStore</title>
+<script src="/__/firebase/7.19.1/firebase-app.js"></script>
+<script src="/__/firebase/init.js"></script>
 	<script>
 		console.log("Hola, este es un script");
 	</script>
@@ -16,6 +18,7 @@
 			display: flex;
 			justify-content: center;
 			text-align: center;
+			margin-left: 100px;
 		}
 		
 		ul{
@@ -40,22 +43,29 @@
 		}
 		
 		a:hover{
-			color: #43E0ED;
+			color: #3BA4ED;
 			margin: 20px 5px;
 			padding: 20px 5px;
 		}
 		
-		div.img{
-			width: 500px;
+		img{
+			display: flex;
+			width: 100px;
+		}
+		
+		div{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
 		}
 
         </style>
 </head>
 
 <body>
-	<div>
+	<div class="div">
 		<img src="logo.jpg" class="img" />
-	</div>
 	
 	<nav>
 		<ul>
@@ -65,8 +75,6 @@
 			<li><a href="#nosotros">Sobre nosotros</a></li>
 		</ul>
 	</nav>
-	
-	<div>
 		
 	</div>
 </body>
