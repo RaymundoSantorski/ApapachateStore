@@ -40,12 +40,12 @@
 		}
 		
 		a:hover{
-			background-color: #000000;
+			background-color: #F6C6FA;
 			color: #FFFFFF;
 			width: 11px;
 		}
 		
-		img{
+		div img{
 			display: flex;
 			width: 100px;
 			height: 100px;
@@ -56,6 +56,20 @@
 			flex-direction: row;
 			align-items: center;
 			justify-content: center;
+		}
+
+		container{
+			margin-top: 50px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		
+		container img{
+			width: 250px;
+			height: 250px;
+			float: left;
+			margin: 20px;
 		}
 
         </style>
@@ -75,6 +89,17 @@
 	</nav>
 		
 	</div>
+
+	<container>
+		<div>
+			<img src="spongebob.jpg" class="img"/>
+			<img src="billie.jpg" class="img"/>
+			<img src="babyYoda.jpg" class="img"/>
+		</div>
+		<div>
+			<img src="loveFinds.jpg" class="img"/>
+		</div>
+	</container>
 	
 </body>
 
