@@ -9,7 +9,10 @@ function info(precio)
 function add(precio)
 {
 	total=total+precio
-	var resul = "El total es $"+total;
-	document.getElementById("total").innerHTML = resul;
+}
+
+function carrito()
+{
+ alert("El total es $"+total)
 
 }
