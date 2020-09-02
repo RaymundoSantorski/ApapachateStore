@@ -1,4 +1,5 @@
 var total=0
+
 console.log("Hola, este es un script")
 
 function info(precio)
@@ -13,6 +14,5 @@ function add(precio)
 
 function carrito()
 {
- alert("El total es $"+total)
-
+	alert("El total es $"+total)
 }
