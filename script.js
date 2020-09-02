@@ -9,5 +9,7 @@ function info(precio)
 function add(precio)
 {
 	total=total+precio
-	alert("El total es $"+total)
+	var resul = "El total es $"+total;
+	document.getElementById("total").innerHTML = resul;
+
 }

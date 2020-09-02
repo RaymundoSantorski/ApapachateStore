@@ -76,3 +76,9 @@ container button{
 	border: 0px solid #000000;
 
 }
+
+label{
+	display: flex;
+	float: left;
+
+}
