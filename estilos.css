@@ -63,10 +63,12 @@ container img{
 }
 
 container button{
+	height: 40px;
+	width: 200px;
 	background-color: #e7a61a;
 	opacity: 0.7;
-	margin-right: 80px;
-	margin-left: 90px;
+	margin-right: 40px;
+	margin-left: 40px;
 	margin-top: -280px;
 	border-radius: 42px 42px 42px 42px;
 	-moz-border-radius: 42px 42px 42px 42px;
