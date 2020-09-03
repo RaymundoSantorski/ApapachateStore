@@ -18,3 +18,9 @@ function carrito()
 	var elemento = document.getElementById("overlay");
 	elemento.classList.add('active');
 }
+
+function cerrarCarrito()
+{
+	var elemento = document.getElementById("overlay");
+	elemento.classList.remove('active');
+}
