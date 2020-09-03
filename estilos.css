@@ -83,12 +83,6 @@ nav button{
 	background-color: #555FFF;
 	font-weight: bold;
 
-label{
-	display: flex;
-	position: fixed;
-
-}
-
 .overlay{
 	visibility: hidden;
 }

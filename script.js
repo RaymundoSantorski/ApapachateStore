@@ -15,6 +15,6 @@ function add(precio)
 function carrito()
 {
 	document.getElementById("total").innerHTML = total;
-	var Overlay = document.getElementById("overlay");
-	Overlay.classList.add('active');
+	var elemento = document.getElementById("overlay");
+	elemento.classList.add('active');
 }
