@@ -131,16 +131,31 @@ container form{
 	background-color: #FFFFFF;
 }
 
-.popup button{
+.overlay button{
 	position: fixed;
+	background-color: rgba(0,0,0,0.5);
+	color: #FFFFFF;
 	margin-left: -260px;
 	margin-top: -260px;
-
 }
 
 .popup label{
+	position: fixed;
 	width: 100px;
 	height: 20px;
-	margin-left: -380px;
+	margin-left: -360px;
 	margin-top: -450px;
+}
+
+.popup input{
+	position: fixed;
+	color: #FFFFFF;
+	width: 100px;
+	height: 30px;
+	margin-left: 0px;
+	margin-top: 200px;
+	background-color: rgba(127,127,255,0.5);
+	border-radius: 42px 42px 42px 42px;
+	-moz-border-radius: 42px 42px 42px 42px;
+	-webkit-border-radius: 42px 42px 42px 42px;
 }
