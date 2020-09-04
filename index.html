@@ -39,15 +39,8 @@
 
 	<div class="contenedor">
 
-		<div class="overlay" id="overlay">
-			<div class="popup">
-				<button id="cerrarPopup" onclick="cerrarCarrito()">X</button>
-				<label id="total"></label>
-			</div>
-		</div>
-
 		<div class="div">
-			<img src="logo.jpg" class="img" />
+			<img src="logo-min.jpg" class="img" />
 		
 			<nav>
 				<ul>
@@ -66,7 +59,8 @@
 		<container>
 			<div class="muestra">
 				<div class="producto" class="primera">
-					<img src="spongebob.jpg" class="img" onclick="info(50)" />
+					<button onclick="add(50)">Agregar a carrito</button>
+					<img src="spongebob-min.jpg" class="img" onclick="info(50)" />
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="GCR4B764DBXGW">
@@ -75,7 +69,8 @@
 					</form>
 				</div>
 				<div class="producto">
-					<img src="billie.jpg" class="img" onclick="info(60)" />
+					<button onclick="add(60)">Agregar a carrito</button>
+					<img src="billie-min.jpg" class="img" onclick="info(60)" />
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="6VBYTHUBY9FBY">
@@ -84,7 +79,8 @@
 					</form>	
 				</div>
 				<div class="producto">
-					<img src="babyYoda.jpg" class="img" onclick="info(70)" />
+					<button onclick="add(70)">Agregar a carrito</button>
+					<img src="babyYoda-min.jpg" class="img" onclick="info(70)" />
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="23PMRQMXZ4QJL">
@@ -96,7 +92,8 @@
 			</div>
 			<div class="muestra">
 				<div class="producto" class="primera">
-					<img src="loveFinds.jpg" class="img" onclick="info(80)" />
+					<button onclick="add(80)">Agregar a carrito</button>
+					<img src="loveFinds-min.jpg" class="img" onclick="info(80)" />
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="HJHK4AAC33YC2">
@@ -105,7 +102,8 @@
 					</form>						
 				</div>
 				<div class="producto">
-					<img src="gorros.jpg" class="img" onclick="info(90)" />
+					<button onclick="add(90)">Agregar a carrito</button>
+					<img src="gorros-min.jpg" class="img" onclick="info(90)" />
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="6PHURPU8DVM9Q">
@@ -123,7 +121,8 @@
 					</form>						
 				</div>
 				<div class="producto">
-					<img src="bodychicas.jpg" class="img" onclick="info(100)" />
+					<button onclick="add(100)">Agregar a carrito</button>
+					<img src="bodychicas-min.jpg" class="img" onclick="info(100)" />
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
 						<input type="hidden" name="hosted_button_id" value="HLLDGMU784UEA">
@@ -133,7 +132,12 @@
 				</div>
 			</div>
 		</container>
-
+		<div class="overlay" id="overlay">
+			<div class="popup">
+				<button id="cerrarPopup" onclick="cerrarCarrito()">X</button>
+				<label id="total"></label>
+			</div>
+		</div>
 	</div>
 </body>
 

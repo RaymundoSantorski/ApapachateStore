@@ -55,21 +55,23 @@ container{
 	justify-content: center;
 }
 		
-container img{
+.producto img{
 	width: 250px;
 	height: 250px;
 	float: left;
-	margin: 20px;
+	margin: 10px;
 }
 
-container button{
+.producto button{
+	float: left;
 	height: 40px;
 	width: 200px;
 	background-color: #e7a61a;
 	opacity: 0.7;
 	margin-right: 40px;
 	margin-left: 40px;
-	margin-top: -280px;
+	margin-top: 110px;
+	margin-bottom: -150px;
 	border-radius: 42px 42px 42px 42px;
 	-moz-border-radius: 42px 42px 42px 42px;
 	-webkit-border-radius: 42px 42px 42px 42px;
@@ -99,15 +101,19 @@ nav button{
 .producto{
 	display: flex;
 	flex-direction: column;
+	margin: 0px;
 }
 
 container form{
-	width: 250px;
+	width: 150px;
 	height: 250px;
 	float: left;
-	margin-right: 20px;
-	margin-left: 120px;
-	margin-top: 20px;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+	margin-right: 40px;
+	margin-left: 60px;
+	margin-top: 0px;
 	margin-bottom: -150px;
 }
 
@@ -127,7 +133,14 @@ container form{
 
 .popup button{
 	position: fixed;
-	margin-left: -250px;
-	margin-top: -250px;
+	margin-left: -260px;
+	margin-top: -260px;
 
+}
+
+.popup label{
+	width: 100px;
+	height: 20px;
+	margin-left: -380px;
+	margin-top: -450px;
 }
