@@ -117,3 +117,10 @@ container form{
 	justify-content: center;
 	align-items: center;
 }
+
+.ventana{
+	position: fixed;
+	width: 500px;
+	height: 500px;
+	background-color: #FFFFFF;
+}
