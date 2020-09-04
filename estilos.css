@@ -91,3 +91,18 @@ nav button{
 .overlay.active{
 	visibility: visible;
 }
+
+.producto{
+	display: flex;
+	flex-direction: column;
+}
+
+container form{
+	width: 250px;
+	height: 250px;
+	float: left;
+	margin-right: 20px;
+	margin-left: 120px;
+	margin-top: 20px;
+	margin-bottom: -150px;
+}
