@@ -106,14 +106,3 @@ container form{
 	margin-top: 20px;
 	margin-bottom: -150px;
 }
-
-.muestra{
-	display: flex;
-	padding: 50px;
-	justify-content: center;
-	align-items: center;
-}
-
-.primera{
-	margin-left: 100px 100px;
-}
