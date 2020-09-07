@@ -41,7 +41,21 @@ div img{
 	height: 100px;
 }
 		
-div div{
+.contenedor .div{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor .muestra{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor .overlay{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -126,10 +140,12 @@ container form{
 }
 
 .popup{
+	display: flex;
 	position: fixed;
 	flex-direction: column;
 	width: 500px;
-	height: 500px;
+	height: fit-content;
+	min-height: 500px;
 	background-color: #FFFFFF;
 }
 
@@ -137,35 +153,39 @@ container form{
 	position: fixed;
 	background-color: rgba(0,0,0,0.5);
 	color: #FFFFFF;
-	margin-left: -260px;
-	margin-top: -260px;
+	width: 20px;
+	height: 20px;
+	margin-left: -20px;
+	margin-top: -20px;
 }
 
 .popup .total{
-	position: fixed;
 	width: 100px;
 	height: 20px;
-	margin-left: -360px;
-	margin-top: -450px;
+	margin-left: 20px;
+	margin-top: 20px;
 }
 
-.popup input{
-	position: fixed;
+.popup .pago{
 	color: #FFFFFF;
 	width: 100px;
 	height: 30px;
-	margin-left: 0px;
-	margin-top: 200px;
+	margin-left: 20px;
+	margin-top: 20px;
 	background-color: rgba(127,127,255,0.5);
 	border-radius: 42px 42px 42px 42px;
 	-moz-border-radius: 42px 42px 42px 42px;
 	-webkit-border-radius: 42px 42px 42px 42px;
+	border: none;
+	border-color: rgba(0,0,0,0);
 }
 
 .items{
 	display: flex;
 	flex-direction: column;
-	width: 200px;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 300px;
 	height: min-content;
-	
+
 }

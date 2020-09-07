@@ -2,7 +2,8 @@ var total=0
 
 function info(precio)
 {
-	alert("El precio es $"+precio)
+	var n = total.toString
+	return n
 }
 
 function add(precio, producto)
