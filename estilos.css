@@ -159,3 +159,11 @@ container form{
 	-moz-border-radius: 42px 42px 42px 42px;
 	-webkit-border-radius: 42px 42px 42px 42px;
 }
+
+.items{
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	height: min-content;
+	margin-top: 20px;
+}

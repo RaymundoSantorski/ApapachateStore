@@ -31,7 +31,7 @@
 		<container>
 			<div class="muestra">
 				<div class="producto" class="primera">
-					<button onclick="add(50)">Agregar a carrito</button>
+					<button onclick="add(50, 'Playera Bob Esponja')">Agregar a carrito</button>
 					<img src="spongebob-min.jpg" class="img" onclick="info(50)" />
 					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 						<input type="hidden" name="cmd" value="_s-xclick">
@@ -109,6 +109,9 @@
 			<div class="popup">
 				<button id="cerrarPopup" class="cerrarPopup" onclick="cerrarCarrito()">X</button>
 				<label id="total"></label>
+				<div class="items">
+
+				</div>
 				<input type="submit" value="PAGAR"/>
 			</div>
 		</div>

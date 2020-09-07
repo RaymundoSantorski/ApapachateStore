@@ -5,8 +5,12 @@ function info(precio)
 	alert("El precio es $"+precio)
 }
 
-function add(precio)
+function add(precio, producto)
 {
+	var pro = document.createElement("label");
+	pro.innerHTML = producto + " " + precio;
+	document.querySelector(".items").appendChild(pro)
+	
 	total=total+precio
 }
 
