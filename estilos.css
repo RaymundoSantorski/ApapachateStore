@@ -87,6 +87,7 @@ nav button{
 }
 
 .overlay{
+	display: flex;
 	visibility: hidden;
 }
 
@@ -126,6 +127,7 @@ container form{
 
 .popup{
 	position: fixed;
+	flex-direction: column;
 	width: 500px;
 	height: 500px;
 	background-color: #FFFFFF;
@@ -139,7 +141,7 @@ container form{
 	margin-top: -260px;
 }
 
-.popup label{
+.popup .total{
 	position: fixed;
 	width: 100px;
 	height: 20px;
@@ -165,5 +167,5 @@ container form{
 	flex-direction: column;
 	width: 200px;
 	height: min-content;
-	margin-top: 40px;
+	
 }

@@ -8,8 +8,8 @@ function info(precio)
 function add(precio, producto)
 {
 	var pro = document.createElement("label");
-	pro.innerHTML = producto + " " + precio;
-	document.querySelector(".items").appendChild(pro)
+	pro.innerHTML = producto + " $" + precio
+	document.querySelector(".items").appendChild(pro);
 	
 	total=total+precio
 }
