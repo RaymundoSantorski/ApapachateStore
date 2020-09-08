@@ -20,13 +20,13 @@
 					<li><a href="#productos">Productos</a></li>
 					<li><a href="#contacto">Contacto</a></li>
 					<li><a href="#nosotros">Sobre nosotros</a></li>
-				</ul>
+				</ul><!--lista nav-->
 				<div>
 					<button id="carrito" onclick="carrito()">Carrito</button>
-				</div>
-			</nav>
+				</div><!--boton carrito-->
+			</nav><!--nav-->
 
-		</div>
+		</div><!--div head-->
 
 		<container>
 			<div class="muestra">
@@ -39,7 +39,7 @@
 						<input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
 						<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
 					</form>
-				</div>
+				</div><!--Producto Playera Bob-->
 				<div class="producto">
 					<button onclick="add(60, 'Playera Billie Eilish')">Agregar a carrito</button>
 					<img src="billie-min.jpg" class="img" onclick="info(60)" />
@@ -49,7 +49,7 @@
 						<input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
 						<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
 					</form>	
-				</div>
+				</div><!--producto Playera Billie-->
 				<div class="producto">
 					<button onclick="add(70, 'Playera Baby Yoda')">Agregar a carrito</button>
 					<img src="babyYoda-min.jpg" class="img" onclick="info(70)" />
@@ -59,9 +59,8 @@
 						<input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
 						<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
 					</form>	
-				</div>
-				
-			</div>
+				</div><!--producto Playera Yoda-->
+			</div><!--muestra 1-->
 			<div class="muestra">
 				<div class="producto" class="primera">
 					<button onclick="add(80, 'Playera When Love Finds Me')">Agregar a carrito</button>
@@ -72,7 +71,7 @@
 						<input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
 						<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
 					</form>						
-				</div>
+				</div><!--producto Playera When-->
 				<div class="producto">
 					<button onclick="add(90, 'Gorro con estampado')">Agregar a carrito</button>
 					<img src="gorros-min.jpg" class="img" onclick="info(90)" />
@@ -91,7 +90,7 @@
 						<input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
 						<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
 					</form>						
-				</div>
+				</div><!--producto Gorro-->
 				<div class="producto">
 					<button onclick="add(100, 'Body Chicas Super Poderosas')">Agregar a carrito</button>
 					<img src="bodychicas-min.jpg" class="img" onclick="info(100)" />
@@ -101,9 +100,9 @@
 						<input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal, la forma más segura y rápida de pagar en línea.">
 						<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
 					</form>						
-				</div>
-			</div>
-		</container>
+				</div><!--producto body-->
+			</div><!--muestra 2-->
+		</container><!--container productos-->
 
 		<div class="overlay" id="overlay">
 			<div class="popup">
@@ -133,14 +132,22 @@
 						onApprove: function(data, actions) {
 							return actions.order.capture().then(function(details) {
 								alert('Transaction completed by ' + details.payer.name.given_name + '!');
+								sucess(details.payer.name.given_name);
 							});
 						}
 					}).render('#paypal-button-container');
-				</script>
-			</div>
-		</div>
+				</script><!--Paypal plugin-->
+			</div><!--popup-->
+		</div> <!--overlay-->
 
-	</div>
+		<div class="overlay" id="sucess">
+			<div class="popup" id="content">
+				<button id="cerrar" class="cerrarPopup" onclick="cerrar()">X</button>
+				<label id="mensaje" class="mensaje"></label>
+			</div><!--content-->
+		</div><!--Pago exitoso-->
+
+	</div> <!--contenedor-->
 
 	<!-- Load Facebook SDK for JavaScript -->
 	<div id="fb-root"></div>
@@ -167,8 +174,8 @@
 		theme_color="#23E7EA"
 		logged_in_greeting="¡Hola! ¿Un helado? ¿Cómo podemos ayudarte?"
 		logged_out_greeting="¡Hola! ¿Un helado? ¿Cómo podemos ayudarte?">
-	</div> 	
+	</div><!--Messenger plugin--> 	
 
-</body>
+</body><!--body-->
 
 </html>
